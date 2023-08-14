@@ -366,7 +366,6 @@ void gameMatrix::findJojoDFSRec(std::vector<std::string>& solucion_str, std::vec
 		prev = cur;
 		getNeighbors(prev);
 		vertex_t* vecino;
-				//FIX MEEEEEEE
 		for (unsigned int i = 0; i < prev->neighbors_row.size(); i++)
 		{
 			std::string direction;
@@ -395,7 +394,6 @@ void gameMatrix::findJojoDFSRec(std::vector<std::string>& solucion_str, std::vec
 					return;
 				}
 
-				//FIX RECURRENCY OF FUNCTION BC PREV GETS NEVER UPDATED BACK INTO WHAT IT WAS BEFORE "AT PREV = MATRIS[5][1]"
 				if (solucion_str.back() != "J" || target == NULL)
 				{
 					direction = solucion_str.back();
