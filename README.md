@@ -5,7 +5,7 @@ Semester: Fall 2021
 
 Final Project Grade: A
 
-Note: you can find the full documentation and rubric of the project assigned in the file "project3-F2021.pdf"
+Note: you can find the full documentation and rubric of the project here -> [final project documentation](./project3-F2021.pdf)
 
 1 OVERVIEW
 
