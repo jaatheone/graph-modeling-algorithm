@@ -1,6 +1,6 @@
 Analysis of Algorithms Project
 
-Welcome to my final project for a class I took in Fall 2021
+Welcome to my final project for a class I took in Fall 2021 in which I obtained an A
 
 
 1 OVERVIEW
