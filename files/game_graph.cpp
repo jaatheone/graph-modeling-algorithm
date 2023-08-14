@@ -90,9 +90,6 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row - 3).at(v->column) != NULL)
 			{
-				//matris->at(v->row - 3).at(v->column)->row = v->row - 3;
-				//matris->at(v->row - 3).at(v->column)->column = v->column;
-				//v->neighbors.push_back(matris->at(v->row - 3).at(v->column));
 				v->neighbors_row.push_back(v->row - 3);
 				v->neighbors_column.push_back(v->column);
 				v->neighbors_distance.push_back(3);
@@ -103,11 +100,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row - 4).at(v->column) != NULL)
 			{
-				//matris->at(v->row - 4).at(v->column)->row = v->row - 4;
-				//matris->at(v->row - 4).at(v->column)->column = v->column;
 				v->neighbors_row.push_back(v->row - 4);
 				v->neighbors_column.push_back(v->column);
-				//v->neighbors.push_back(matris->at(v->row - 4).at(v->column));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -121,11 +115,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row - 3).at(v->column - 3) != NULL)
 			{
-				//matris->at(v->row - 3).at(v->column - 3)->row = v->row - 3;
-				//matris->at(v->row - 3).at(v->column - 3)->column = v->column - 3;
 				v->neighbors_row.push_back(v->row - 3);
 				v->neighbors_column.push_back(v->column - 3);
-				//v->neighbors.push_back(matris->at(v->row - 3).at(v->column - 3));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -135,11 +126,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row - 4).at(v->column - 4) != NULL)
 			{
-				//matris->at(v->row - 4).at(v->column - 4)->row = v->row - 4;
-				//matris->at(v->row - 4).at(v->column - 4)->column = v->column - 4;
 				v->neighbors_row.push_back(v->row - 4);
 				v->neighbors_column.push_back(v->column - 4);
-				//v->neighbors.push_back(matris->at(v->row - 4).at(v->column - 4));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -153,11 +141,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row - 3).at(v->column + 3) != NULL)
 			{
-				//matris->at(v->row - 3).at(v->column + 3)->row = v->row - 3;
-				//matris->at(v->row - 3).at(v->column + 3)->column = v->column + 3;
 				v->neighbors_row.push_back(v->row - 3);
 				v->neighbors_column.push_back(v->column + 3);
-				//v->neighbors.push_back(matris->at(v->row - 3).at(v->column + 3));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -166,11 +151,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row - 4).at(v->column + 4) != NULL)
 			{
-				//matris->at(v->row - 4).at(v->column + 4)->row = v->row - 4;
-				//matris->at(v->row - 4).at(v->column + 4)->column = v->column + 4;
 				v->neighbors_row.push_back(v->row - 4);
 				v->neighbors_column.push_back(v->column + 4);
-				//v->neighbors.push_back(matris->at(v->row - 4).at(v->column + 4));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -184,11 +166,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row + 3).at(v->column) != NULL)
 			{
-				//matris->at(v->row + 3).at(v->column)->row = v->row + 3;
-				//matris->at(v->row + 3).at(v->column)->column = v->column;
 				v->neighbors_row.push_back(v->row + 3);
 				v->neighbors_column.push_back(v->column);
-				//v->neighbors.push_back(matris->at(v->row + 3).at(v->column));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -197,11 +176,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row + 4).at(v->column) != NULL)
 			{
-				//matris->at(v->row + 4).at(v->column)->row = v->row + 4;
-				//matris->at(v->row + 4).at(v->column)->column = v->column;
 				v->neighbors_row.push_back(v->row + 4);
 				v->neighbors_column.push_back(v->column);
-				//v->neighbors.push_back(matris->at(v->row + 4).at(v->column));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -215,11 +191,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row + 3).at(v->column - 3) != NULL)
 			{
-				//matris->at(v->row + 3).at(v->column - 3)->row = v->row + 3;
-				//matris->at(v->row + 3).at(v->column - 3)->row = v->column - 3;
 				v->neighbors_row.push_back(v->row + 3);
 				v->neighbors_column.push_back(v->column - 3);
-				//v->neighbors.push_back(matris->at(v->row + 3).at(v->column - 3));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -228,11 +201,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row + 4).at(v->column - 4) != NULL)
 			{
-				//matris->at(v->row + 4).at(v->column)->row = v->row + 4;
-				//matris->at(v->row + 4).at(v->column)->column = v->column - 4;
 				v->neighbors_row.push_back(v->row + 4);
 				v->neighbors_column.push_back(v->column - 4);
-				//v->neighbors.push_back(matris->at(v->row + 4).at(v->column - 4));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -246,11 +216,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row + 3).at(v->column + 3) != NULL)
 			{
-				//matris->at(v->row + 3).at(v->column + 3)->row = v->row + 3;
-				//matris->at(v->row + 3).at(v->column + 3)->row = v->column + 3;
 				v->neighbors_row.push_back(v->row + 3);
 				v->neighbors_column.push_back(v->column + 3);
-				//v->neighbors.push_back(matris->at(v->row + 3).at(v->column + 3));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -259,11 +226,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row + 4).at(v->column + 4) != NULL)
 			{
-				//matris->at(v->row + 4).at(v->column + 4)->row = v->row + 4;
-				//matris->at(v->row + 4).at(v->column + 4)->column = v->column + 4;
 				v->neighbors_row.push_back(v->row + 4);
 				v->neighbors_column.push_back(v->column + 4);
-				//v->neighbors.push_back(matris->at(v->row + 4).at(v->column + 4));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -277,11 +241,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row).at(v->column - 3) != NULL)
 			{
-				//matris->at(v->row).at(v->column - 3)->row = v->row;
-				//matris->at(v->row).at(v->column - 3)->row = v->column - 3;
 				v->neighbors_row.push_back(v->row);
 				v->neighbors_column.push_back(v->column - 3);
-				//v->neighbors.push_back(matris->at(v->row).at(v->column - 3));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -290,11 +251,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row).at(v->column - 4) != NULL)
 			{
-				//matris->at(v->row).at(v->column - 4)->row = v->row;
-				//matris->at(v->row).at(v->column - 4)->column = v->column - 4;
 				v->neighbors_row.push_back(v->row);
 				v->neighbors_column.push_back(v->column - 4);
-				//v->neighbors.push_back(matris->at(v->row).at(v->column - 4));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
@@ -308,11 +266,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//add neighbor with edge weight of 3
 			if (matris->at(v->row).at(v->column + 3) != NULL)
 			{
-				//matris->at(v->row).at(v->column + 3)->row = v->row;
-				//matris->at(v->row).at(v->column + 3)->column = v->column + 3;
 				v->neighbors_row.push_back(v->row);
 				v->neighbors_column.push_back(v->column + 3);
-				//v->neighbors.push_back(matris->at(v->row).at(v->column + 3));
 				v->neighbors_distance.push_back(3);
 			}
 		}
@@ -321,11 +276,8 @@ void gameMatrix::getNeighbors(vertex_t* &v)
 			//adds neighbor with edge weight of 4
 			if (matris->at(v->row).at(v->column + 4) != NULL)
 			{
-				//matris->at(v->row).at(v->column + 4)->row = v->row;
-				//matris->at(v->row).at(v->column + 4)->column = v->column + 4;
 				v->neighbors_row.push_back(v->row);
 				v->neighbors_column.push_back(v->column + 4);
-				//v->neighbors.push_back(matris->at(v->row).at(v->column + 4));
 				v->neighbors_distance.push_back(4);
 			}
 			return;
